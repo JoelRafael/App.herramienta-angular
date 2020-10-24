@@ -1,34 +1,52 @@
 <div	class="container	content">
   <div	class="row">
-          <div	class="col-md-6	offset-md-3">
+          <div	class="col-md-12	offset-md-12">
                   <span	class="anchor"	id="formLogin"></span>
 
                   <div	class="card	card-outline-secondary">
-                          <div	class="card-header">
-                                  <h3	class="mb-0">Herramientas</h3>
+                          <div	class="card-header" id="titulo">
+                                  <h3	class="mb-0" >Herramientas</h3>
                           </div>
                           <div	class="card-body">
                                   <form>
-                                      <div	class="form-group">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                      <div class="form-group">
                                           <label	for="nombre">Nombre</label>
                                           <input	type="text"	class="form-control"	id="nombre"	placeholder="Ingresar nombre..." #nombre>
                                       </div>
-                                      <div	class="form-group">
-                                        <label	for="Imagen	Url">Codigo</label>
-                                        <input	type="text"	class="form-control"	id="imagenUrl"	placeholder="Codigo..." #codigo>
                                     </div>
-                                    <div	class="form-group">
-                                      <label	for="Imagen	Url">Tipo Herramienta</label>
-                                      <input	type="text"	class="form-control"	id="imagenUrl"	placeholder="Herramienta	tipo..." #herramienta>
+                                    <div class="col-md-6">
+                                      <div	class="form-group">
+                                        <label	for="codigo">Codigo</label>
+                                        <input	type="text"	class="form-control"	id="codigo"	placeholder="Codigo..." #codigo>
+                                    </div>
                                   </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                    <div	class="form-group">
+                                      <label	for="tipo herramienta">Tipo Herramienta</label>
+                                      <input	type="text"	class="form-control"	id="herramienta"	placeholder="Herramienta	tipo..." #herramienta>
+                                  </div>
+                                </div>
 
+                                  <div class="col-md-6">
                                       <div	class="form-group">
                                           <label	for="Imagen	Url">Imagen	Url</label>
                                           <input	type="text"	class="form-control"	id="imagenUrl"	placeholder="Ingresar	url..." #url>
                                       </div>
-                                      <button	type="submit"	class="btn btn-primary" (click)="guardar(nombre.value, codigo.value,
+                                    </div>
+                                    </div>
+                                      <div class="form-group green-border-focus">
+                                        <label for="exampleFormControlTextarea5">Informacion</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3" placeholder="Informacion"
+                                        #informacion></textarea>
+                                      </div>
+                                      <button	type="submit"	class="btn btn-primary btn-lg btn-block" (click)="guardar(nombre.value, codigo.value,
                                       herramienta.value,
-                                      url.value)">Guardar!</button>
+                                      url.value, informacion.value)">Guardar!</button>
+
                                   </form>
                           </div>
                   </div>

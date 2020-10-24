@@ -3,11 +3,13 @@ export class herramientascoleccion{
   codigo:string;
   herramienta:string;
   imagenurl:string;
-  constructor(n:string,c:string, h:string, u:string,){
+  informacion:string;
+  constructor(n:string,c:string, h:string, u:string, i:string){
   this.nombre=n;
   this.codigo=c;
   this.herramienta=h;
   this.imagenurl=u;
-
+  this.informacion=i;
+  }
 
 }

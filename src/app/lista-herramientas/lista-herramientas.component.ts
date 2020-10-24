@@ -14,8 +14,8 @@ lista:herramientascoleccion[];
 
   ngOnInit(): void {
   }
-  guardar(nombre, codigo, herramienta,url){
-    this.lista.push(new herramientascoleccion(nombre,codigo,herramienta,url));
+  guardar(nombre, codigo, herramienta,url, informacion){
+    this.lista.push(new herramientascoleccion(nombre,codigo,herramienta,url, informacion));
     console.log(this.lista);
     return false;
 
